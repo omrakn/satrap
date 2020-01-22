@@ -1,6 +1,7 @@
 import sys
 import backend as bk
 from PyQt5 import QtGui, QtCore, QtWidgets
+from osmnx.errors import UnknownNetworkType
 
 
 class Controller:
@@ -364,6 +365,10 @@ is not available in OSM database.")
                 return QtWidgets.QMessageBox.warning(None, "Error",
                                                      "Geometry must \
 be a polygon.")
+            except UnknownNetworkType:
+                return QtWidgets.QMessageBox.warning(None, "Error",
+                                                     "Transportation mode \
+is not available.")
             except:
                 return QtWidgets.QMessageBox.warning(None, "Error",
                                                      "Unexpected Error")
@@ -759,6 +764,10 @@ be specified.")
                          "Daily": self.dailyAccessibility}
                 function = funcs[self.AnalysisMethodSelection.currentText()]
                 return function()
+            except UnknownNetworkType:
+                return QtWidgets.QMessageBox.warning(None, "Error",
+                                                     "Transportation mode \
+is not available.")
             except:
                 raise
 
