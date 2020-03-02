@@ -1032,7 +1032,7 @@ private-access ones")
         self.HelpButton.setText(_translate("Frame", "Help"))
         self.OriginsLabel.setText(_translate("Frame", "Origins"))
         self.DestinationsLabel.setText(_translate("Frame", "Destinations"))
-        self.WeightLabel.setText(_translate("Frame", "Weight Column (*)"))
+        self.WeightLabel.setText(_translate("Frame", "Weight Field (*)"))
         self.TransportationModeLabel.setText(_translate("Frame",
                                                         "Transportation Mode \
 (*)"))
