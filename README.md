@@ -16,6 +16,10 @@ After these processes, satrap.py can be opened via prompt screen from pygis envi
 
 >python satrap.py
 
+# Contact
+
+Ömer AKIN - akinom@itu.edu.tr 
+
 # License
 
 SATRAP is distributed under the MIT license, a permissive open-source (free software) license.
