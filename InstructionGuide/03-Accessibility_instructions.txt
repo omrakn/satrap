@@ -1,0 +1,26 @@
+# Accessibility Section
+How to use: InstructionGuide/ss/accessibility_instruction.png
+
+### Example 1
+Analysis Method: Potential
+----------------
+Origins: TestData/accessibility/origins.shp
+Destinations: TestData/accessibility/destinations.shp
+Weight Field: (default value: 1)
+Transportation Mode: drive
+Output Interactive Map: OutputFiles/accessibility/paris_pot_accessibility.html
+Output shapefiles: OutputFiles/accessibility/shapefiles/origins_pot.shp & destinations_pot.shp
+Output network: OutputFiles/accessibility/shapefiles/edges_drive.shp & nodes_drive.shp
+
+
+### Example 2
+Analysis Method: Daily
+----------------
+Origins: TestData/accessibility/origins.shp
+Destinations: TestData/accessibility/destinations.shp
+Weight Field: (default value: 1)
+Transportation Mode: walk
+Distance Threshold: 1000 (default value: 3000)
+Output Interactive Map: OutputFiles/accessibility/paris_daily_accessibility.html
+Output shapefiles: OutputFiles/accessibility/shapefiles/origins_daily.shp & destinations_daily.shp
+Output network: OutputFiles/accessibility/shapefiles/edges_walk.shp & nodes_walk.shp

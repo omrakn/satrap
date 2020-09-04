@@ -1,0 +1,37 @@
+# Centrality Section
+How to use: InstructionGuide/ss/centrality_instruction.png
+
+### Example 1
+Data Input Method: Region Name
+Analysis Method: Degree
+----------------
+Region Name/Result Number: Chamartin, Madrid / 2
+Transportation Mode: drive
+Output Interactive Map: OutputFiles/centrality/chamartin_degree.html
+Output shapefiles: OutputFiles/centrality/shapefiles/chamartin_degree.shp
+Output network: OutputFiles/centrality/shapefiles/chamartin_edges.shp
+Openstreetmap Information: InstructionGuide/ss/chamartin_madrid.png
+
+
+### Example 2
+Data Input Method: Region Name
+Analysis Method: Betweenness
+----------------
+Region Name/Result Number: Besiktas, Istanbul / 1 (or leave blank)
+Transportation Mode: walk
+Output Interactive Map: OutputFiles/centrality/besiktas_betweenness.html
+Output shapefiles: OutputFiles/centrality/shapefiles/besiktas_btw.shp
+Output network: OutputFiles/centrality/shapefiles/besiktas_edges.shp
+Openstreetmap Information: InstructionGuide/ss/besiktas_istanbul.png
+
+
+### Example 3
+Data Input Method: Region Name
+Analysis Method: Closeness
+----------------
+Region Name/Result Number: Greenwich, London / 2
+Transportation Mode: bike
+Output Interactive Map: OutputFiles/centrality/greenwich_closeness.html
+Output shapefiles: OutputFiles/centrality/shapefiles/greenwich_cls.shp
+Output network: OutputFiles/centrality/shapefiles/greenwich_edges.shp
+Openstreetmap Information: InstructionGuide/ss/greenwich_london.png

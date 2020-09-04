@@ -1,0 +1,34 @@
+# Centrality Section
+How to use: InstructionGuide/ss/centrality_instruction.png
+
+### Example 1
+Data Input Method: Boundary
+Analysis Method: Degree
+----------------
+Polygon Boundary of Area: TestData/centrality/boundaries/chamartin.shp
+Transportation Mode: drive
+Output Interactive Map: OutputFiles/centrality/chamartin_degree_v2.html
+Output shapefiles: OutputFiles/centrality/shapefiles/chamartin_degree_v2.shp
+Output network: OutputFiles/centrality/shapefiles/chamartin_edges.shp
+
+
+### Example 2
+Data Input Method: Boundary
+Analysis Method: Betweenness
+----------------
+Polygon Boundary of Area: TestData/centrality/boundaries/besiktas.shp
+Transportation Mode: walk
+Output Interactive Map: OutputFiles/centrality/besiktas_betweenness_v2.html
+Output shapefiles: OutputFiles/centrality/shapefiles/besiktas_btw_v2.shp
+Output network: OutputFiles/centrality/shapefiles/besiktas_edges.shp
+
+
+### Example 3
+Data Input Method: Boundary
+Analysis Method: Closeness
+----------------
+Polygon Boundary of Area: TestData/centrality/boundaries/greenwich.shp
+Transportation Mode: bike
+Output Interactive Map: OutputFiles/centrality/greenwich_closeness_v2.html
+Output shapefiles: OutputFiles/centrality/shapefiles/greenwich_cls_v2.shp
+Output network: OutputFiles/centrality/shapefiles/greenwich_edges.shp
