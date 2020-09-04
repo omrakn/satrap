@@ -1,6 +1,6 @@
 # Spatial Analyst of Transportation Performance -- SATRAP
 
-SATRAP quantifies and illustrates the centrality and accessibility metrics of a road network. The software is designed as an independent GIS software that can calculate transportation performance metrics with an all-round open-source approach. Users can obtain, analyze and visualize open source spatial data without handling any technical difficulties with SATRAP. It targets policy makers and researchers who want to analyze a road network's geometric and topologic properties with its easy-to-use interface.
+SATRAP quantifies and illustrates the centrality and accessibility metrics of a road network. The software is designed as an independent GIS software that can calculate transportation performance metrics with an all-round open-source approach. Users can obtain, analyze and visualize open source spatial data without handling any technical difficulties. It targets policy makers and researchers who want to analyze a road network's geometric and topologic properties with its easy-to-use interface.
 
 # To Start SATRAP
 
