@@ -4,7 +4,7 @@ SATRAP quantifies and illustrates the centrality and accessibility metrics of a 
 
 # To Start SATRAP
 
-The software must be opened from an environment having the required libraries. Conda package management system which comes bundled with the Anaconda Python distribution provided by Continuum Analytics (https://www.anaconda.com/products/individual) has been used to control the versions of used libraries. A conda environment that has required libraries can easily be created by using the environment file (pygis.yml) in this repository with the following command in Anaconda Command Prompt or cmd:
+The software must be opened from an environment having the required libraries. Conda package management system which comes bundled with the Anaconda Python distribution provided by Continuum Analytics (https://www.anaconda.com/products/individual) has been used to control the versions of used libraries. A conda environment that has required libraries can easily be created by using the environment file (pygis.yml) in this repository with the following command in Anaconda Command Prompt or cmd*:
 
 >conda env create -f requirements.yml
 
@@ -15,6 +15,8 @@ After the environment is created, the following command must be executed to use 
 After these processes, satrap.py can be opened via prompt screen from pygis environment.
 
 >python satrap.py
+
+*conda version = 4.8.4
 
 # Contact
 

@@ -198,7 +198,7 @@ node is {:.5f}'.format(str(nm), bt),
 
         m.add_child(fgbtw)
         m.save(argument[0])
-        
+
         G_proj = nx.MultiGraph(G_proj)
         ox.save_graph_shapefile(G_proj, filename="network", folder=outPath)
         nodes_btw.to_file(outPath + "/btw_centrality.shp")
@@ -388,18 +388,18 @@ analysis to shapefile and webmap*.
     orig_grouped = (
         (gdf.groupby("from_id")).sum()).merge(
             nodes, left_index=True, right_on="osmid")
-            
+
     dest_grouped = (
         (gdf.groupby("to_id")).sum()).merge(
             nodes, left_index=True, right_on="osmid")
-            
+
     orig_gdf = gpd.GeoDataFrame(
         orig_grouped.drop(["to_id", "y", "x", "highway", "lon", "lat"],
-                            axis=1), crs=nodes.crs)
-    
+                          axis=1), crs=nodes.crs)
+
     dest_gdf = gpd.GeoDataFrame(
         dest_grouped.drop(["from_id", "y", "x", "highway", "lon", "lat"],
-                            axis=1), crs=nodes.crs)
+                          axis=1), crs=nodes.crs)
 
     def get_nearest_POI(row, gdf2):
         geom = MultiPoint(list(gdf2.geometry))
@@ -412,10 +412,10 @@ analysis to shapefile and webmap*.
     dest_gdf["nearest"] = dest_gdf.apply(
         get_nearest_POI, gdf2=destinations, axis=1
         )
-    
+
     orig_gdf.geometry = orig_gdf["nearest"]
     dest_gdf.geometry = dest_gdf["nearest"]
-    
+
     origins = gpd.sjoin(origins, orig_gdf,
                         how="inner", op="intersects")
     origins.drop(["nearest"], axis=1, inplace=True)
@@ -526,18 +526,18 @@ def dailyAccessibility(gdf, nodes, G, origins, destinations,
     orig_grouped = (
         (gdf.groupby("from_id")).sum()).merge(
             nodes, left_index=True, right_on="osmid")
-            
+
     dest_grouped = (
         (gdf.groupby("to_id")).sum()).merge(
             nodes, left_index=True, right_on="osmid")
-            
+
     orig_gdf = gpd.GeoDataFrame(
         orig_grouped.drop(["to_id", "y", "x", "highway", "lon", "lat"],
-                            axis=1), crs=nodes.crs)
-    
+                          axis=1), crs=nodes.crs)
+
     dest_gdf = gpd.GeoDataFrame(
         dest_grouped.drop(["from_id", "y", "x", "highway", "lon", "lat"],
-                            axis=1), crs=nodes.crs)
+                          axis=1), crs=nodes.crs)
 
     def get_nearest_POI(row, gdf2):
         geom = MultiPoint(list(gdf2.geometry))
@@ -550,10 +550,10 @@ def dailyAccessibility(gdf, nodes, G, origins, destinations,
     dest_gdf["nearest"] = dest_gdf.apply(
         get_nearest_POI, gdf2=destinations, axis=1
         )
-    
+
     orig_gdf.geometry = orig_gdf["nearest"]
     dest_gdf.geometry = dest_gdf["nearest"]
-    
+
     origins = gpd.sjoin(origins, orig_gdf,
                         how="inner", op="intersects")
     origins.drop(["nearest"], axis=1, inplace=True)
@@ -626,7 +626,7 @@ def dailyAccessibility(gdf, nodes, G, origins, destinations,
         ox.save_graph_shapefile(G, filename="network", folder=outPath)
         origins.to_file(outPath + "/origins.shp")
         destinations.to_file(outPath + "/destinations.shp")
-        return "I" 
+        return "I"
     else:
         ox.save_graph_shapefile(G, filename="network", folder=outPath)
         origins.to_file(outPath + "/origins.shp")
