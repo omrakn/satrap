@@ -365,5 +365,5 @@ dependencies:
     - pycrs==1.0.1
     - retrying==1.3.3
     - urbanaccess==0.2.0
-prefix: C:\Users\Teashon\Anaconda3\envs\pygis
+prefix: C:\Users\OmrAkn\Anaconda3\envs\pygis
 
