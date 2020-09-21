@@ -155,6 +155,7 @@ class MainWindow(object):
 
 
 class Centrality(object):
+
     def setupUi(self, Frame):
         Frame.setObjectName("Frame")
         Frame.setFixedSize(870, 230)
